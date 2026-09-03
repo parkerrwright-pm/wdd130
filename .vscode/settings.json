@@ -15,7 +15,7 @@
   "editor.parameterHints.enabled": false,
   "editor.suggestOnTriggerCharacters": false,
   "editor.hover.enabled": "off",
-  "editor.inlineSuggest.enabled": false,
+  "editor.inlineSuggest.enabled": true,
   "html.format.enable": true,
   "html.format.maxPreserveNewLines": 2,
   "html.format.wrapLineLength": 100,

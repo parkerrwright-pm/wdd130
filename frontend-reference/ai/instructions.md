@@ -23,6 +23,8 @@ Consult [MDN Web Docs](https://developer.mozilla.org/) when an answer depends on
 ## Front-end standards
 
 - Prefer semantic HTML5.
+- Start every HTML `<head>` with UTF-8 character encoding, viewport metadata, and the page title, in that order. Put stylesheets and other allowed head elements after the title.
+- Do not add the retired `x-ua-compatible` Internet Explorer meta tag.
 - Use logical heading order.
 - Use links for navigation and buttons for actions.
 - Associate form controls with labels.
@@ -30,3 +32,5 @@ Consult [MDN Web Docs](https://developer.mozilla.org/) when an answer depends on
 - Prefer simple Flexbox or Grid when those concepts are being taught.
 - Keep HTML, CSS, and JavaScript separate.
 - Do not introduce frameworks or libraries unless requested.
+
+For a question about optional head elements, consult the local `frontend-reference/external/HEAD/` checkout or the [HEAD repository](https://github.com/joshbuchea/HEAD). Use only tags the instructor or assignment requires.

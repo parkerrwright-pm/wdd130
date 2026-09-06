@@ -1,0 +1,12 @@
+# Use an imperative, capitalized subject line without a period.
+# It should complete: "If applied, this commit will <subject>."
+# Keep the subject at 72 characters or fewer.
+
+# Explain what changed and why when a body is useful. Wrap body lines at
+# 72 characters. Do not describe implementation details the diff shows.
+# Include the original problem, how the change addresses it, and any effects
+# or known limitations. State the original issue for the reviewer.
+# Do not include comments specific to a patch set.
+
+# Add issue references in the body when applicable, for example:
+# Fixes #123

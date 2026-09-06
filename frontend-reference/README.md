@@ -15,6 +15,7 @@ The code examples are intentionally small. They are reference patterns, not comp
 ## Sections
 
 - [HTML](html/) - semantic structure, forms, tables, navigation, images, and accessibility.
+- [HTML head template](html/head.html) - required order for document metadata and stylesheets.
 - [CSS](css/) - foundational reset, typography, variables, Flexbox, Grid, and responsive rules.
 - [Components](components/) - partial, reusable patterns for common interface pieces.
 - [JavaScript](javascript/) - introductory concepts for later coursework.
@@ -24,7 +25,7 @@ The code examples are intentionally small. They are reference patterns, not comp
 
 ## Reference sources
 
-[MDN Web Docs](https://developer.mozilla.org/) is the primary external reference for web platform behavior. Use the specific MDN links in each topic file to verify element semantics, CSS properties, JavaScript APIs, accessibility practices, and browser compatibility.
+[MDN Web Docs](https://developer.mozilla.org/) is the primary external reference for web platform behavior. Use the specific MDN links in each topic file to verify element semantics, CSS properties, JavaScript APIs, accessibility practices, and browser compatibility. The instructor-recommended [HEAD repository](https://github.com/joshbuchea/HEAD) is also cloned locally at `frontend-reference/external/HEAD/` for optional head-element reference.
 
 MDN explains how the platform works. The repository instructions still determine the appropriate level of help for course assignments.
 

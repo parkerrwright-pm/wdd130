@@ -1,0 +1,9 @@
+body {
+  padding: 1rem;
+}
+
+@media (max-width: 40rem) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,9 @@
+.card {
+  padding: 1rem;
+  border: 1px solid #b8c4cc;
+}
+
+.card__link {
+  display: inline-block;
+  margin-top: 1rem;
+}

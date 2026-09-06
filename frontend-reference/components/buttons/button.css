@@ -1,0 +1,14 @@
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  background-color: #176b87;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button--secondary {
+  color: #176b87;
+  background-color: #e5f2f5;
+}

@@ -1,0 +1,9 @@
+.hero {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.hero p {
+  max-width: 40rem;
+  margin: 0 auto;
+}

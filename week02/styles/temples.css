@@ -12,7 +12,8 @@ body {
 img {
     max-width: 100%;
     height: auto;
-    box-shadow: 0 0 30px #333;
+    box-shadow: 0 -5px 15px -5px #333;
+    margin-bottom: 1rem;
 }
 
 header,
@@ -22,7 +23,8 @@ footer {
     margin: 0 auto;
 }
 
-header {
+header,
+footer {
     background-color: #333333;
     color: white;
     padding: .25em;
@@ -37,11 +39,11 @@ main {
     h1 {
         text-align: center;
         font-size: 2em;
-        margin: 0.5em 0;
+        margin: .5em 0;
     }
 
     section {
-        margin: 2% 0;
+        margin: 0 0 1rem;
         border: 1px solid rgb(0, 0, 0/10%);
         background-color: #DDDDDD;
         padding: 1rem;

@@ -1,6 +1,13 @@
+main {
+    max-width: 840px;
+}
+
 main img {
     width: 9.375rem;
     height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
 nav {
@@ -35,10 +42,13 @@ aside {
     background-color: #eee;
     color: #eee;
     text-align: center;
+    /* aside declarations */
+}
 
-    img {
-        width: 12.5rem;
+    aside img {
+        width: 200px;
         height: auto;
+        /* image declarations */
     }
 
     p {

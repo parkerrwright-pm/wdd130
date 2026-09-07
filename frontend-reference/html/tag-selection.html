@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tag Selection Reference</title>
+</head>
+
+<body>
+  <header>
+    <h1>HTML Tag Selection</h1>
+    <p>Choose the element that describes the content. Do not add wrappers unless
+      they provide structure or a styling target you actually need.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Core rules</h2>
+      <ul>
+        <li>Put text inside a text element such as a paragraph, heading, link,
+          or list item. Do not leave text directly in `body`, `header`, `nav`,
+          `main`, or `footer`.</li>
+        <li>Use `div` only after checking for a more meaningful element.</li>
+        <li>Images normally do not need an extra wrapper. Use `figure` and
+          `figcaption` when a caption belongs with an image.</li>
+        <li>Do not use heading elements or formatting elements to change how
+          text looks. Use CSS; use `span` only to style part of text.</li>
+        <li>Do not use `b`, `u`, `strong`, `em`, or `i` for WDD 130 text
+          styling.</li>
+        <li>Do not use obsolete elements, including `acronym`.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Layout and navigation</h2>
+      <p>Use Grid for major layout areas and Flexbox inside Grid areas when it
+        helps arrange related items.</p>
+      <p>Use `nav` for navigation. Do not automatically add `ul` and `li`;
+        direct links are appropriate for many navigation areas. Complex
+        navigation may use `div` when it needs a styling or layout grouping.</p>
+    </section>
+
+    <section>
+      <h2>Class reference elements</h2>
+      <p>Start with elements for page structure: `html`, `head`, `body`,
+        `header`, `main`, `nav`, `section`, `article`, `aside`, and `footer`.</p>
+      <p>Use text elements for content: `h1` through `h6`, `p`, `a`, `span`,
+        `address`, `blockquote`, `br`, and lists with `ul`, `ol`, `dl`, and
+        `li`.</p>
+      <p>Use image elements together: `img`, `figure`, and `figcaption`.
+        Use table elements only for data: `table`, `caption`, `thead`, `tbody`,
+        `tfoot`, `tr`, `th`, and `td`.</p>
+      <p>Use form elements only in forms: `form`, `fieldset`, `label`, `input`,
+        `select`, `textarea`, and `button`. Use `iframe` only for the Week 5
+        contact-page map, and use `svg` only when an SVG image is required.</p>
+    </section>
+
+    <section>
+      <h2>Ask before adding a tag</h2>
+      <p>Ask what content the element describes, whether it is required by the
+        assignment, and whether an existing parent already provides the needed
+        structure.</p>
+      <p>Check [MDN HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
+        and the [Tutorial Republic HTML5 tag list](https://www.tutorialrepublic.com/html-reference/html5-tags.php)
+        when you are unsure which current element fits.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Use only course-approved elements and ask the instructor when unsure.</p>
+  </footer>
+</body>
+
+</html>

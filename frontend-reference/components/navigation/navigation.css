@@ -1,7 +1,5 @@
-.site-navigation__list {
+.site-navigation {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 0;
-    list-style: none;
 }

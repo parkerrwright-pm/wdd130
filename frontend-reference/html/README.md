@@ -2,6 +2,10 @@
 
 These files demonstrate semantic structure and accessible HTML. Compare them with [MDN HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) and adapt only the relevant structure to your assignment.
 
+Use [tag-selection.html](tag-selection.html) to decide whether an element is
+needed before adding it. It includes the instructor's class rules, approved
+element contexts, and references for checking current HTML usage.
+
 ## Required head order
 
 Every page starts its `<head>` in this order:

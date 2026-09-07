@@ -1,5 +1,10 @@
 .site-footer {
     margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid #b8c4cc;
+    padding: 2rem 1rem;
+    color: #f1f1f1;
+    background-color: #242321;
+}
+
+.site-footer a {
+    color: #ffffff;
 }

@@ -1,12 +1,17 @@
+main img {
+    width: 9.375rem;
+    height: auto;
+}
+
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: 1rem;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 h1 {
@@ -14,13 +19,34 @@ h1 {
 }
 
 img {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 10px;
-}
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0/0.2);
+    /* 1️⃣ */
+    padding: 1rem;
+    background-color: #eee;
+    color: #eee;
+    text-align: center;
+
+    img {
+        width: 12.5rem;
+        height: auto;
+    }
+
+    p {
+        padding: 0;
+    }
+
+    footer {
+        margin-top: 15px;
+        border-top: 1px solid #000;
+        text-align: center;
+    }

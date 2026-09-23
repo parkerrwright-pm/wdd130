@@ -1,3 +1,13 @@
+:root {
+    --main-width: 840px;
+    --aside-width: 20rem;
+    --aside-margin: 1rem;
+    --aside-border-color: rgba(0, 0, 0, 0.2);
+    --aside-padding: 1rem;
+    --aside-bg-color: #eee;
+    --aside-text-color: #333;
+}
+
 main {
     max-width: 840px;
 }

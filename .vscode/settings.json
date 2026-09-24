@@ -14,7 +14,7 @@
   },
   "editor.parameterHints.enabled": false,
   "editor.suggestOnTriggerCharacters": false,
-  "editor.hover.enabled": "off",
+  "editor.hover.enabled": "on",
   "editor.inlineSuggest.enabled": true,
   "html.format.enable": true,
   "html.format.maxPreserveNewLines": 2,

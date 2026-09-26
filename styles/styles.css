@@ -64,7 +64,7 @@ aside {
     width: var(--aside-width);
     margin: var(--aside-margin);
     /* 1️⃣ */
-    text-align: center;
+    text-align: left;
     position: relative;
     /* aside declarations */
 }

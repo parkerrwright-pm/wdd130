@@ -44,9 +44,12 @@ header > img {
     height: auto;
 }
 
+header nav {
+    justify-self: end;
+}
+
 header nav ul {
     display: flex;
-    justify-content: flex-end;
     gap: 1rem;
     list-style: none;
 }

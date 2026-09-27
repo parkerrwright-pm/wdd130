@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
 }
 
@@ -14,20 +13,34 @@
     --aside-text-color: #333;
 }
 
+header,
+.grid,
+footer {
+    max-width: var(--main-width);
+    margin: 0 auto;
+}
+
+header {
+    grid-column: 1/-1;
+}
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 1rem;
 }
 
 main {
+    grid-column: 2/3;
     max-width: var(--main-width);
+    min-width: 0;
+    margin: 1rem;
 }
 
 main img {
     width: 9.375rem;
     height: auto;
     border: 1px solid black;
-    padding: 2px;
+    padding: .25rem;
     box-shadow: 0 0 30px gray;
     float: right;
     margin: 0 0 1rem 1rem;
@@ -35,62 +48,62 @@ main img {
 
 p {
     margin: 2rem;
+    padding: 0;
 }
 
 nav {
-    background-color: darkblue;
+    background-color: steelblue;
     padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 1.25rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    padding: 0.5rem;
 }
 
 h1 {
     color: darkblue;
+    border-bottom: 1px solid darkblue;
 }
 
 img {
-    width: 9.375rem;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
 }
 
 aside {
-    width: var(--aside-width);
-    margin: var(--aside-margin);
-    /* 1️⃣ */
-    text-align: left;
     position: relative;
-    /* aside declarations */
+    width: auto;
+    margin: var(--aside-margin);
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0 0 1rem;
     border: 1px solid #000;
-    padding: var(--aside-padding);
+    padding: .25rem;
     box-shadow: 0 0 30px gray;
 }
 
 aside h2 {
     position: absolute;
     top: 47px;
-    left: 150px;
-}
-
-p {
-    padding: 0;
+    left: 100px;
+    width: 100%;
 }
 
 footer {
-    margin-top: 15px;
+    grid-column: 1/-1;
     border-top: 1px solid #000;
     text-align: center;
 }
@@ -106,4 +119,12 @@ footer {
 
 .indent {
     margin-left: 2rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: var(--aside-width) 1fr;
+    max-width: var(--main-width);
+    margin: 0 auto;
 }

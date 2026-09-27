@@ -11,7 +11,9 @@ body {
 }
 
 div {
-    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px dashed;
     padding: 1rem;
 }
@@ -23,19 +25,25 @@ div {
 
 .flex {
     background-color: #aba;
-    /* write declarations here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aba;
 
 }
 
 .grid {
+    display: grid;
+    place-items: center;
     background-color: #abb;
-    /* enter declarations here */
-
+    color: #000;
 }
 
 .container2 {
-    /* write declarations here */
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    ;
 }
 
 .two {
@@ -44,13 +52,13 @@ div {
 }
 
 .container3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     /* write declarations here */
-
 }
 
 .columns-3 {
-    /* write declaration here */
-
+    grid-column: 1/4;
 }
 
 .three {

@@ -30,3 +30,10 @@ body {
 .item3 {
     min-height: 300px;
 }
+
+.flex-container {
+    justify-content: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    align-content: space-between;
+}

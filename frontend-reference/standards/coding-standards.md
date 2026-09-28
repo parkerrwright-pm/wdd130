@@ -19,4 +19,13 @@
 - Remove unused markup and styles.
 - Test one change at a time so errors are easier to locate.
 
+## CSS Organization and Color Consistency
+
+- Put `:root` custom properties at the top of the stylesheet.
+- Follow variables with the universal reset and default HTML element rules.
+- Place shared content defaults after the defaults, followed by shared header and footer styling.
+- Group reusable classes next, then place rules used by individual pages in page-specific sections.
+- Keep related selectors together and avoid duplicate rules. When selectors overlap, later declarations can override earlier declarations, so order should be intentional.
+- Prefer a consistent color notation within a stylesheet (for example, hex values). Mixed notations such as named colors, hex, and `rgb()` can suggest inconsistent styling, but are not inherently invalid. Use alpha/transparency where needed and choose a notation that clearly expresses it.
+
 Use [HTML tag selection](../html/tag-selection.html), [MDN HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), and [MDN CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) to verify platform details.

@@ -147,7 +147,7 @@ footer .socialmedia img {
     background-color: var(--article-background);
     border-left: 5px solid var(--secondary-color);
     border-radius: var(--border-radius);
-    box-shadow: 0 4px 12px rgb(0 0 0 / 20%);
+    box-shadow: 0 4px 12px #0003;
     color: var(--primary-color);
     overflow: auto;
 }

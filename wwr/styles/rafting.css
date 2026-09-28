@@ -4,6 +4,8 @@
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
+    --hero-overlay: #264653;
+    --article-background: #ffffff;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 
@@ -130,7 +132,7 @@ footer .socialmedia img {
     padding: 1rem 0;
     text-align: center;
     font-size: 1.8rem;
-    background-color: rgb(38 70 83 / 85%);
+    background-color: var(--hero-overlay);
     color: #ffffff;
 }
 
@@ -142,7 +144,7 @@ footer .socialmedia img {
     min-height: 7rem;
     margin: 0;
     padding: 1.25rem;
-    background-color: rgb(255 255 255 / 72%);
+    background-color: var(--article-background);
     border-left: 5px solid var(--secondary-color);
     border-radius: var(--border-radius);
     box-shadow: 0 4px 12px rgb(0 0 0 / 20%);

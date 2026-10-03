@@ -4,21 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafting Company Contact</title>
+    <title>Contact Us | Rafting Company</title>
     <meta name="description"
-      content="Provides contact information and a form to obtain user input including questions and comments. This page provides contact information for our Rafting Company, including ways to reach us for inquiries, bookings, and support. Get in touch with our team to plan your next adventure.">
+      content="Contact the Rafting Company for trip reservations, general questions, or website feedback. Find our address, phone number, email, and team information.">
     <meta name="author" content="Parker Wright">
     <link rel="stylesheet" href="../wwr/styles/rafting.css">
 </head>
 
-</head>
-
-<body>
+<body class="contact-page">
     <header>
         <img src="../wwr/images/rafting-company-logo.png" alt="Rafting Company Logo">
         <nav>
             <ul>
-                <li><a href="../index.html">Profile Home</a></l>
+                <li><a href="../index.html">Profile Home</a></li>
                 <li><a href="index.html">Rafting Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
@@ -30,42 +28,59 @@
     <main>
         <h1>Rafting Company</h1>
         <address>
-            Rafting Company<br>
-            123 Adventure way<br>
+            123 Adventure Way<br>
             Utah, USA<br>
             Email: info@raftingcompany.com<br>
             Phone: (123) 456-7890
         </address>
-        <div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d86267.4625484639!2d-109.33697631661543!3d40.36365018055311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1791003999885!5m2!1sen!2sus"
-              width="600" height="450" ;" allowfullscreen="" loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="contact-layout">
+            <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d86267.4625484639!2d-109.33697631661543!3d40.36365018055311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1791003999885!5m2!1sen!2sus"
+                  title="Map showing the rafting company's location" width="600" height="450"
+                  allowfullscreen loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <form class="contact-form" action="submit_contact_form.php" method="post">
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <fieldset class="form-row form-row--purpose">
+                    <legend>Message Purpose</legend>
+                    <div class="purpose-options">
+                        <div>
+                            <input type="radio" id="inquiry" name="purpose" value="General Inquiry"
+                              required>
+                            <label for="inquiry">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="reservation" name="purpose"
+                              value="Reservation Question">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="suggestion" name="purpose"
+                              value="Website Suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-row form-row--message">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit">Get in Touch!</button>
+            </form>
         </div>
-        <p>If you have any questions or need more information about our rafting trips, please reach
-            out to us using the form below.</p>
-        <form action="submit_contact_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message Purpose:</label>
-            <input type="radio" id="inquiry" name="message" value="General Inquiry" required>
-            General Inquiry<br>
-            <input type="radio" id="reservation" name="message" value="Reservation Question"
-              required> Reservation Question<br>
-            <input type="radio" id="suggestion" name="message" value="Website Suggestion" required>
-            Suggestion<br>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" cols="30"></textarea>
-
-            <label checkbox for="subscribe">Please subscribe me to the monthly newsletter:</label>
-            <input type="checkbox" id="subscribe" name="subscribe">
-            <button type="submit">Get in Touch!</button>
-        </form>
 
         <section class="employee spotlight">
             <h2>We Are Here to Serve You</h2>
